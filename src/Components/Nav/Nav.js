@@ -12,12 +12,14 @@ export default function Nav() {
 
     return (
         <div className="header">
-        <label htmlFor="navToggle" className={isActive ? "navToggleLabel change" : "navToggleLabel"} onClick={toggleMenuSelector}>
+        <label htmlFor="navToggle" className={isActive ? "navToggleLabel" : "navToggleLabel change"} onClick={toggleMenuSelector}>
         <span className="bar1"></span>
         <span className="bar2"></span>
         <span className="bar3"></span>
       </label>
-      <a className="logoAnchor" href="/"><img src={logo} alt="Sea Hag Cafe Logo" href="/" className="logo" /></a>
+      <a className="logoAnchor" href="/">
+        <img src={logo} alt="Sea Hag Cafe Logo" href="/" className="logo" />
+      </a>
       <input type="checkbox" id="navToggle" className="navToggle" />
       <nav>
         <ul>
